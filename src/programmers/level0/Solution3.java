@@ -24,13 +24,13 @@ public class Solution3 {
         int numer = (numer1 * denom2) + (denom1 * numer2);
         int denom = denom1 * denom2;
 
-        int gcd = gdc1(numer, denom);
+        int gcd = gcd1(numer, denom);
         return new int[]{numer / gcd, denom / gcd};
     }
 
-    private int gdc1(int numer, int denom) {
+    private int gcd1(int numer, int denom) {
         if (denom == 0) return numer;
-        return gdc1(denom, numer % denom);
+        return gcd1(denom, numer % denom);
     }
 
     private int gdc2(int numer, int denom) {
