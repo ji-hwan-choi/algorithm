@@ -24,9 +24,10 @@ public class TowSum {
 
         for (int i = 0; i < nums.length; i++) {
             int needValue = target - nums[i];
+            Integer searchValue = map.get(needValue);
 
-            if (null != map.get(needValue) && i != map.get(needValue))
-                return new int[]{i, map.get(needValue)};
+            if (null != searchValue && i != searchValue)
+                return new int[]{i, searchValue};
         }
 
         return new int[]{-1, -1};

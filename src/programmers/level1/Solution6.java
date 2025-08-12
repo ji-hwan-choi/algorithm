@@ -1,11 +1,5 @@
 package programmers.level1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.stream.IntStream;
-
 /**
  * 문제 : 삼총사
  * https://school.programmers.co.kr/learn/courses/30/lessons/131705?language=java

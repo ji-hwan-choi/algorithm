@@ -33,7 +33,7 @@ public class Solution3 {
         return gcd1(denom, numer % denom);
     }
 
-    private int gdc2(int numer, int denom) {
+    private int gcd2(int numer, int denom) {
         while (denom != 0) {
             int temp = denom;
             denom = numer % denom;
